@@ -13,7 +13,7 @@ def run():
 
 
 def get_passwords() -> tp.List[str]:
-    return [line.strip() for line in open("wordlist.txt")]
+    return [line.strip() for line in open("files/wordlist.txt")]
 
 
 def get_pdf_password(passwords: tp.List[str]) -> tp.Optional[str]:
@@ -25,7 +25,7 @@ def get_pdf_password(passwords: tp.List[str]) -> tp.Optional[str]:
 
 def is_password_correct(password: str) -> bool:
     try:
-        with pikepdf.open("secret-document.pdf", password=password) as pdf:
+        with pikepdf.open("files/secret-document.pdf", password=password) as pdf:
             return True
     except pikepdf._qpdf.PasswordError as e:
         return False

@@ -7,7 +7,7 @@ The PDF `secret-document.pdf` password is `AbC123`.
 ## Run the program
 
 ```python
-python crack-pdf.py
+python src/crack-pdf.py
 ```
 
 ## Resources
