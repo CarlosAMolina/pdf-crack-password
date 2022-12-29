@@ -59,4 +59,3 @@ def get_passwords(path_names: PathNamesConfig) -> tp.List[str]:
 
 if __name__ == "__main__":
     run()
-
